@@ -19,9 +19,6 @@ A comunicação entre os microserviços segue o seguinte fluxo:
 
 O projeto utiliza Docker Compose para facilitar a configuração dos serviços e do RabbitMQ. O arquivo `docker-compose.yml` define os serviços e a rede necessária para a comunicação entre eles. As variáveis de ambiente `RABBITMQ_URL` nos serviços `order-service` e `payment-service` são configuradas para apontar para o serviço RabbitMQ no Docker Compose.
 
-## Objetivo do Estudo
-
-O objetivo deste projeto é explorar os conceitos de comunicação entre microserviços utilizando RabbitMQ e mensageria assíncrona. Ao final do estudo, espera-se compreender os benefícios e desafios dessa abordagem em ambientes distribuídos e escaláveis.
 
 ## Diagramas
 
