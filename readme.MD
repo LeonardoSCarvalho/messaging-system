@@ -38,21 +38,20 @@ O objetivo deste projeto é explorar os conceitos de comunicação entre microse
 
 ### Diagrama de Sequência
 
-
-order-service payment-service
-| |
-| |
-| POST /order with order data |
-|----------------------------------------->|
-| |
-| |
-| |
-| Process order and send |
-| confirmation message |
-|<-----------------------------------------|
-| |
-
-
+```bash
+order-service                          payment-service
+     |                                          |
+     |                                          |
+     |    POST /order with order data           |
+     |----------------------------------------->|
+     |                                          |
+     |                                          |
+     |                                          |
+     |      Process order and send              |
+     |      confirmation message                |
+     |<-----------------------------------------|
+     |                                          |
+```
 
 ## Executando o Projeto
 
