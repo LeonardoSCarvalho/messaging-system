@@ -1,17 +1,19 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import { sendOrder } from './producer';
 
 const app = express();
+app.use(express.json());
 
-const port = 3000;
-
-app.us(express.json());
-app.post('./order', (req: Request, res: Response) => {
+app.post('/order', async (req, res) => {
+  console.log('Received order request');
   const order = req.body;
-  sendOrder(order);
-  res.status(200).send('Order sent to RabbitMQ');
-})
+  console.log('Order details:', order);
+  await sendOrder(order);
+  res.send('Order received');
+});
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Order service running on port ${PORT}`);
+});
+
