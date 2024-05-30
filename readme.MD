@@ -1,6 +1,6 @@
-# Projeto de Estudo: Comunicação entre Microserviços com RabbitMQ
+# Comunicação entre Microserviços com RabbitMQ
 
-Este é um projeto de estudo que demonstra como implementar a comunicação entre microserviços utilizando RabbitMQ como mensagem broker. O projeto consiste em dois microserviços, `order-service` e `payment-service`, que se comunicam assincronamente através de mensagens.
+Este é um projeto para fins de estudo que demonstra como implementar a comunicação entre microserviços utilizando RabbitMQ como mensagem broker. O projeto consiste em dois microserviços, `order-service` e `payment-service`, que se comunicam assincronamente através de mensagens.
 
 ## Arquitetura
 
