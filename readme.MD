@@ -65,6 +65,6 @@ Para executar o projeto, clone o repositório e execute o seguinte comando na ra
 
 ```bash
 docker-compose up --build
-
+```
 
 Isso irá criar e iniciar os contêineres para os serviços order-service, payment-service e RabbitMQ. Você poderá então enviar pedidos para o order-service e verificar os logs para acompanhar a comunicação entre os serviços.
